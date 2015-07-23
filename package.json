@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "local-server-web-view:open"
   },
-  "repository": "https://github.com/atom/local-server-web-view",
+  "repository": "https://github.com/brycefranzen/local-server-web-view",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
