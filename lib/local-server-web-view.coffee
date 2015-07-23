@@ -26,9 +26,10 @@ module.exports =
         when "C:\\xampp\\htdocs\\amandaConley\\" then (serverPath = "amandaconley.localhost:8081/")
         else (serverPath = "localhost:8081/")
         # EXAMPLE: when "{project_folder_path}" then (serverPath = "{prepend_url}")
-        
+
     # Send Data to Print Function
     @sendToBrowser relativePath
 
   sendToBrowser: (relativePath) ->
       Shell.openExternal("http://"+serverPath+relativePath)
+      # This creates the URL for the web browser.  EXAMPLE: "http://franzenit.localhost:8081/about.php"
