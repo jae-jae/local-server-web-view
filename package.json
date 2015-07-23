@@ -1,7 +1,7 @@
 {
   "name": "local-server-web-view",
   "main": "./lib/local-server-web-view",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Open files in a web browser that are located on a local server with a simple keystroke",
   "keywords": [
   ],
