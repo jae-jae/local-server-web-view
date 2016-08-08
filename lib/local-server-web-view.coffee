@@ -18,11 +18,15 @@ module.exports =
       'E:\\Workspace\\www':'http://localhost',
     }
 
-    serverPath = projectURL
+    serverPath = null
     for path,server of pathToUrl
       if projectURL.indexOf(path) isnt -1
         serverPath = server + projectURL.replace(path,'').replace(/\\/g,'/')
         break
+    if not serverPath?
+      serverPath = "file://#{projectURL}"
+
+    alert serverPath
 
     # Send Data to Print Function
     @sendToBrowser serverPath
